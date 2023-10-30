@@ -27,7 +27,13 @@ h1 {
     font-weight: 400;
 }
 
+.featured-container-left {
 
+}
+
+.featured-container-left img {
+    min-width: 660px;
+}
 
 
 @media (min-width: 640px) {

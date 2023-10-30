@@ -85,15 +85,9 @@ header {
     }
 }
 
-@media (min-width: 1144px) {
-    header {
-        max-width: 1144px;
-        border-bottom-right-radius: 8px;
-        border-bottom-left-radius: 8px;
-    }
-
+@media (min-width: 980px) {
     .searchbar input {
-        min-width: 640px;
+        min-width: 440px;
     }
 
     .menu-btn {
@@ -104,5 +98,14 @@ header {
         display: flex;
         gap: 16px;
         padding-right: 16px;
+    }
+
+}
+
+@media (min-width: 1144px) {
+    header {
+        max-width: 1144px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
     }
 }
