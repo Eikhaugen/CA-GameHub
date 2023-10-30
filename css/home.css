@@ -1,0 +1,41 @@
+@import "../css/constants.css";
+
+* {
+    font-family: Roboto, serif;
+    box-sizing: border-box;
+    color: #393939;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #1B203D;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-container {
+    width: 100%;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 32px;
+    padding-left: 8px;
+    font-weight: 400;
+}
+
+
+
+
+@media (min-width: 640px) {
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1144px) {
+    .main-container {
+        width: 1144px;
+    }
+}
