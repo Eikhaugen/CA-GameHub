@@ -6,7 +6,7 @@
     color: #393939;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -20,26 +20,118 @@ body{
     width: 100%;
 }
 
-h1 {
+/*Featured section*/
+
+.featured-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2 {
     color: #ffffff;
     font-size: 32px;
     padding-left: 8px;
     font-weight: 400;
 }
 
-.featured-container-left {
+.featured-container-right {
+    display: none;
+}
 
+.featured-container-left {
+    width: 100%;
+    align-self: center;
+    position: relative;
+    top: 0;
 }
 
 .featured-container-left img {
-    min-width: 660px;
+    width: 100%;
 }
 
+.carousel-img-1-desktop {
+    display: none;
+}
+
+.featured-carousel-nav-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    position: absolute;
+    top: 40%;
+}
+
+.featured-carousel-nav-btn {
+    background: var(--nav-btn);
+    height: 64px;
+    width: 32px;
+    border-radius: 6px;
+    border: none;
+}
+
+.featured-carousel-nav-btn:hover {
+background-color: var(--nav-btn-hover);
+}
+
+.featured-carousel-indicators-container {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding: 4px;
+}
 
 @media (min-width: 640px) {
+    .carousel-img-1-mobile {
+        display: none;
+    }
+
+    .carousel-img-1-desktop {
+        display: block;
+    }
 }
 
-/* Extra Large (xl) */
+@media (min-width: 980px) {
+    .featured-carousel-indicators-container {
+        display: none;
+    }
+
+    .featured-carousel-nav-btn-container {
+        display: none;
+    }
+
+    .featured-container-right {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-top: 8px;
+    }
+
+    .featured-product-card {
+        background-color: var(--secondary);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        height: 104px;
+        width: 233px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding-left: 16px;
+        color: #ffffff;
+    }
+
+    .featured-product-card:hover, .featured-product-card:focus{
+        background-color: var(--primary);
+        color: var(--text);
+    }
+
+    .featured-product-card span{
+        color: #ffffff;
+    }
+
+}
+
 @media (min-width: 1144px) {
     .main-container {
         width: 1144px;
