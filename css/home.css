@@ -43,7 +43,6 @@ h1, h2 {
     width: 100vw;
     align-self: center;
     position: relative;
-    margin: .5rem;
 }
 
 .featured-container-left img {
@@ -62,7 +61,7 @@ h1, h2 {
     top: 40%;
 }
 
-.featured-carousel-nav-btn {
+.featured-carousel-nav-btn, .category-nav-btn {
     background: var(--nav-btn);
     height: 64px;
     width: 32px;
@@ -71,7 +70,7 @@ h1, h2 {
     margin: 0 .5rem;
 }
 
-.featured-carousel-nav-btn:hover {
+.featured-carousel-nav-btn:hover, .featured-carousel-nav-btn:focus, .category-nav-btn:hover, .category-nav-btn:focus{
     background-color: var(--nav-btn-hover);
 }
 
@@ -88,15 +87,14 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    height: fit-content;
+    width: 100%;
     gap: 1rem;
     padding: .5rem;
 }
 
 .deals-and-offers-card {
     width: 100%;
-    min-height: 200px;
+    min-height: 275px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -143,7 +141,6 @@ h1, h2 {
 .deals-and-offers-card-3 .deals-and-offers-card-price {
     justify-content: flex-end;
 }
-
 
 .todays-deal-announcement {
     background-color: var(--secondary);
@@ -197,6 +194,58 @@ h1, h2 {
     color: #FD9E2F;
 }
 
+/*Categories section*/
+
+.categories-main {
+    width: 100%;
+    position: relative;
+}
+
+.categories-container {
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+    padding: 0 8px;
+    overflow: hidden;
+}
+
+.category-cards {
+    min-width: 242px;
+    height: 192px;
+    border-radius: 8px;
+    background-color: #BAC5CF;
+    background-size: 100%;
+}
+
+.category-nav-btn-container {
+    width: 100%;
+    padding: 0 .5rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+}
+
+.category-1{
+    background-image: url("../assets/images/genre.jpg");
+}
+
+.category-2{
+    background-image: url("../assets/images/genre-1.jpg");
+}
+
+.category-3{
+    background-image: url("../assets/images/genre-2.jpg");
+}
+
+.category-4{
+    background-image: url("../assets/images/genre-3.jpg");
+}
+
+.category-5{
+    background-image: url("../assets/images/genre1.jpg");
+}
+
 @media (min-width: 640px) {
     .carousel-img-1-mobile {
         display: none;
@@ -210,9 +259,7 @@ h1, h2 {
         flex-direction: row;
         padding: .5rem;
     }
-
 }
-
 
 @media (min-width: 980px) {
 
@@ -260,11 +307,13 @@ h1, h2 {
     }
 
     /*    Deals and offers*/
-    .deals-and-offers-main {
-
-    }
     .deals-and-offers-card {
         height: 320px;
+    }
+
+    .category-cards {
+        width: 242px;
+        height: 192px;
     }
 
 }
@@ -273,9 +322,4 @@ h1, h2 {
     .main-container {
         width: 1144px;
     }
-
-    .deals-and-offers-main {
-        max-width: 1144px;
-    }
-
 }

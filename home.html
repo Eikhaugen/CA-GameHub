@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -132,26 +133,26 @@
             <div class="deals-and-offers-main">
                 <div class="deals-and-offers-card deals-and-offers-card-1">
                     <a>
-                    <div class="deals-and-offers-card-price">
-                        <div class="todays-deal-announcement">
-                            Today's Deal!
-                        </div>
-                        <div class="todays-deal-pricetag">
-                            <div class="todays-deal-pricetag-left">
-                                80%
+                        <div class="deals-and-offers-card-price">
+                            <div class="todays-deal-announcement">
+                                Today's Deal!
                             </div>
-                            <div class="todays-deal-pricetag-right">
-                                <div class="old-price">
-                                    <s>
-                                        500 kr
-                                    </s>
+                            <div class="todays-deal-pricetag">
+                                <div class="todays-deal-pricetag-left">
+                                    80%
                                 </div>
-                                <div class="new-price">
-                                    100 kr
+                                <div class="todays-deal-pricetag-right">
+                                    <div class="old-price">
+                                        <s>
+                                            500 kr
+                                        </s>
+                                    </div>
+                                    <div class="new-price">
+                                        100 kr
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="deals-and-offers-card deals-and-offers-card-2">
@@ -201,7 +202,44 @@
             </div>
 
         </div>
+
+        <!--Categories-->
+        <div class="categories-main">
+            <h2>Browse by Categories</h2>
+            <div>
+                <div class="categories-container">
+                    <div class="category-cards category-1"></div>
+                    <div class="category-cards category-2"></div>
+                    <div class="category-cards category-3"></div>
+                    <div class="category-cards category-4"></div>
+                    <div class="category-cards category-5"></div>
+                </div>
+                <div class="category-nav-btn-container">
+                    <button class="category-nav-left category-nav-btn"
+                            aria-label="previous">
+                        <svg width="16" height="34" viewBox="0 0 16 34" fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             aria-hidden="true">
+                            <path d="M15.2 3.4425L12.778 0L0.800003 17L12.778 34L15.2 30.5575L5.653 17L15.2 3.4425Z"
+                                  fill="white"/>
+                        </svg>
+                    </button>
+                    <button class="category-nav-right category-nav-btn"
+                            aria-label="next">
+                        <svg width="16" height="34" viewBox="0 0 16 34" fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             aria-hidden="true">
+                            <path d="M0.799996 30.5575L3.222 34L15.2 17L3.222 0L0.799996 3.4425L10.347 17L0.799996 30.5575Z"
+                                  fill="white"/>
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    
 
 </body>
 </html>
