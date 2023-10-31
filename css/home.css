@@ -8,7 +8,7 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     background-color: #1B203D;
     display: flex;
@@ -31,7 +31,7 @@ body {
 h1, h2 {
     color: #ffffff;
     font-size: 32px;
-    padding-left: 8px;
+    padding-left: .5rem;
     font-weight: 400;
 }
 
@@ -40,10 +40,9 @@ h1, h2 {
 }
 
 .featured-container-left {
-    width: 100%;
+    width: 90%;
     align-self: center;
     position: relative;
-    top: 0;
 }
 
 .featured-container-left img {
@@ -72,7 +71,7 @@ h1, h2 {
 }
 
 .featured-carousel-nav-btn:hover {
-background-color: var(--nav-btn-hover);
+    background-color: var(--nav-btn-hover);
 }
 
 .featured-carousel-indicators-container {
@@ -80,6 +79,24 @@ background-color: var(--nav-btn-hover);
     justify-content: center;
     gap: 4px;
     padding: 4px;
+}
+
+/*Deals and Offers Section*/
+
+.deals-and-offers-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    gap: 1rem;
+}
+
+.deals-and-offers-card{
+    width: 90%;
+    min-height: 200px;
+    background-color: var(--primary);
+    border-radius: 8px;
 }
 
 @media (min-width: 640px) {
@@ -93,6 +110,8 @@ background-color: var(--nav-btn-hover);
 }
 
 @media (min-width: 980px) {
+
+    /*Featured*/
     .featured-carousel-indicators-container {
         display: none;
     }
@@ -101,11 +120,16 @@ background-color: var(--nav-btn-hover);
         display: none;
     }
 
+    .featured-container-left {
+        flex-grow: 1;
+    }
+
     .featured-container-right {
         display: flex;
         flex-direction: column;
         gap: 8px;
         padding-top: 8px;
+        flex-grow: 1;
     }
 
     .featured-product-card {
@@ -121,13 +145,24 @@ background-color: var(--nav-btn-hover);
         color: #ffffff;
     }
 
-    .featured-product-card:hover, .featured-product-card:focus{
+    .featured-product-card:hover, .featured-product-card:focus {
         background-color: var(--primary);
         color: var(--text);
     }
 
-    .featured-product-card span{
+    .featured-product-card span {
         color: #ffffff;
+    }
+
+/*    Deals and offers*/
+    .deals-and-offers-main {
+        max-width: 1144px;
+        flex-direction: row;
+        padding: .5rem;
+    }
+
+    .deals-and-offer-card {
+
     }
 
 }

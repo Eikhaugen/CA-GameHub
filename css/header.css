@@ -37,6 +37,11 @@ header {
     background-color: #374388;
 }
 
+.menu-btn {
+    background: none;
+    border: none;
+}
+
 .menu-btn svg{
     height: 32px;
     padding-right: 16px;
