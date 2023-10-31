@@ -40,9 +40,10 @@ h1, h2 {
 }
 
 .featured-container-left {
-    width: 90%;
+    width: 100vw;
     align-self: center;
     position: relative;
+    margin: .5rem;
 }
 
 .featured-container-left img {
@@ -57,7 +58,6 @@ h1, h2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 8px;
     position: absolute;
     top: 40%;
 }
@@ -68,6 +68,7 @@ h1, h2 {
     width: 32px;
     border-radius: 6px;
     border: none;
+    margin: 0 .5rem;
 }
 
 .featured-carousel-nav-btn:hover {
@@ -83,17 +84,18 @@ h1, h2 {
 
 /*Deals and Offers Section*/
 
-.deals-and-offers-main{
+.deals-and-offers-main {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
     height: fit-content;
     gap: 1rem;
+    padding: .5rem;
 }
 
-.deals-and-offers-card{
-    width: 90%;
+.deals-and-offers-card {
+    width: 100%;
     min-height: 200px;
     background-color: var(--primary);
     border-radius: 8px;
@@ -107,7 +109,14 @@ h1, h2 {
     .carousel-img-1-desktop {
         display: block;
     }
+
+    .deals-and-offers-main {
+        flex-direction: row;
+        padding: .5rem;
+    }
+
 }
+
 
 @media (min-width: 980px) {
 
@@ -154,15 +163,14 @@ h1, h2 {
         color: #ffffff;
     }
 
-/*    Deals and offers*/
+    /*    Deals and offers*/
     .deals-and-offers-main {
-        max-width: 1144px;
-        flex-direction: row;
-        padding: .5rem;
+
     }
 
     .deals-and-offer-card {
-
+    max-width: 350px;
+        max-height: 350px;
     }
 
 }
@@ -171,4 +179,9 @@ h1, h2 {
     .main-container {
         width: 1144px;
     }
+
+    .deals-and-offers-main {
+        max-width: 1144px;
+    }
+
 }
