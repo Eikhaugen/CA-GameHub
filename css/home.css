@@ -1,4 +1,4 @@
-@import "../css/constants.css";
+@import "/css/constants.css";
 
 * {
     font-family: Roboto, serif;
@@ -72,7 +72,7 @@ h1, h2 {
     margin: 0 .5rem;
 }
 
-.featured-carousel-nav-btn:hover, .featured-carousel-nav-btn:focus, .category-nav-btn:hover, .category-nav-btn:focus{
+.featured-carousel-nav-btn:hover, .featured-carousel-nav-btn:focus, .category-nav-btn:hover, .category-nav-btn:focus {
     background-color: var(--nav-btn-hover);
 }
 
@@ -110,15 +110,15 @@ h1, h2 {
 }
 
 .deals-and-offers-card-1 {
-    background-image: url("../assets/images/gamehub_covers10.webp");
+    background-image: url("/assets/images/gamehub_covers10.webp");
 }
 
 .deals-and-offers-card-2 {
-    background-image: url("../assets/images/gamehub_covers6.webp");
+    background-image: url("/assets/images/gamehub_covers6.webp");
 }
 
 .deals-and-offers-card-3 {
-    background-image: url("../assets/images/gamehub_covers8.webp");
+    background-image: url("/assets/images/gamehub_covers8.webp");
 }
 
 .deals-and-offers-card-price{
@@ -233,23 +233,23 @@ padding: 0 .5rem 1rem .5rem;
 }
 
 .category-1{
-    background-image: url("../assets/images/genre.jpg");
+    background-image: url("/assets/images/genre.jpg");
 }
 
 .category-2{
-    background-image: url("../assets/images/genre-1.jpg");
+    background-image: url("/assets/images/genre-1.jpg");
 }
 
 .category-3{
-    background-image: url("../assets/images/genre-2.jpg");
+    background-image: url("/assets/images/genre-2.jpg");
 }
 
 .category-4{
-    background-image: url("../assets/images/genre-3.jpg");
+    background-image: url("/assets/images/genre-3.jpg");
 }
 
 .category-5{
-    background-image: url("../assets/images/genre1.jpg");
+    background-image: url("/assets/images/genre1.jpg");
 }
 
 @media (min-width: 640px) {
