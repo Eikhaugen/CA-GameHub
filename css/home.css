@@ -12,7 +12,8 @@ body {
     margin: 0;
     background-color: #1B203D;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -26,13 +27,14 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 0 .5rem;
 }
 
 h1, h2 {
     color: #ffffff;
     font-size: 32px;
-    padding-left: .5rem;
     font-weight: 400;
+    padding-left: .5rem;
 }
 
 .featured-container-right {
@@ -199,13 +201,17 @@ h1, h2 {
 .categories-main {
     width: 100%;
     position: relative;
+padding: 0 .5rem 1rem .5rem;
+}
+
+.categories-main h2 {
+    padding-left: 0;
 }
 
 .categories-container {
     width: 100%;
     display: flex;
     gap: .5rem;
-    padding: 0 8px;
     overflow: hidden;
 }
 
@@ -219,7 +225,7 @@ h1, h2 {
 
 .category-nav-btn-container {
     width: 100%;
-    padding: 0 .5rem;
+    padding: 0 1.5rem 0 .5rem;
     display: flex;
     justify-content: space-between;
     position: absolute;
