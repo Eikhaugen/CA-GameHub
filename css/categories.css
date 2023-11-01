@@ -26,13 +26,7 @@
 }
 
 .category-nav-btn-container {
-    width: 100%;
-    padding: 0 1.5rem 0 .5rem;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    pointer-events: none;
+    position: relative;
 }
 
 .category-1{
@@ -63,4 +57,20 @@
     border: none;
     margin: 0 .5rem;
     pointer-events: visible;
+}
+
+.category-nav-btn:hover, .category-nav-btn:focus {
+    background-color: var(--nav-btn-hover);
+}
+
+.category-nav-left {
+    position: absolute;
+    bottom: 58px;
+    left: 8px;
+}
+
+.category-nav-right {
+    position: absolute;
+    bottom: 58px;
+    right: 8px;
 }
