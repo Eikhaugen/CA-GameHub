@@ -193,7 +193,9 @@ h1, h2 {
     .carousel-img-1-desktop {
         display: block;
     }
+}
 
+@media (min-width: 750px) {
     .deals-and-offers-main {
         flex-direction: row;
         padding: .5rem;
