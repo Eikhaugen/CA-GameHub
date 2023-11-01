@@ -90,6 +90,7 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    text-decoration: none;
 }
 
 .deals-and-offers-card-1, .deals-and-offers-card-2, .deals-and-offers-card-3 {
@@ -125,11 +126,7 @@ h1, h2 {
     justify-content: space-between;
 }
 
-.deals-and-offers-card-2 .deals-and-offers-card-price {
-    justify-content: flex-end;
-}
-
-.deals-and-offers-card-3 .deals-and-offers-card-price {
+.deals-and-offers-card-2 .deals-and-offers-card-price,  .deals-and-offers-card-3 .deals-and-offers-card-price{
     justify-content: flex-end;
 }
 
