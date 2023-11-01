@@ -61,7 +61,7 @@ h1, h2 {
     margin: 0 .5rem;
 }
 
-.featured-carousel-nav-btn:hover, .featured-carousel-nav-btn:focus, .category-nav-btn:hover, .category-nav-btn:focus {
+.featured-carousel-nav-btn:hover, .featured-carousel-nav-btn:focus {
     background-color: var(--nav-btn-hover);
 }
 
