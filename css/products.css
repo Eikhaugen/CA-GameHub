@@ -1,0 +1,110 @@
+@import "constants.css";
+
+
+.main-container {
+    width: 100%;
+}
+
+h1, h2 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 400;
+    padding-left: .5rem;
+}
+
+.products-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .5rem .5rem;
+    gap: .5rem;
+}
+
+.product-card {
+    width: 100%;
+    height: 88px;
+    border-radius: 6px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+
+.product-card-image img {
+    width: 70px;
+    height: 80px;
+    border-radius: 6px;
+}
+
+
+.product-card-desc {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: .5rem;
+    flex-grow: 1;
+}
+
+.game-title {
+    font-size: 30px;
+}
+
+.game-title a {
+    text-decoration: none;
+}
+
+.product-card-price-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.product-card-price, .cta-buy-btn {
+    width: 100px;
+    height: 32px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: none;
+}
+
+.cta-buy-btn:hover {
+    cursor: pointer;
+}
+
+.product-card-price {
+    background-color: #374388;
+}
+
+.cta-buy-btn {
+    background-color: var(--cta-idle);
+}
+
+.cta-buy-btn:hover {
+    background-color: var(--cta-hover);
+}
+
+@media (min-width: 840px) {
+
+    .products-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-card {
+        justify-self: stretch;
+    }
+}
+
+@media (min-width: 1144px) {
+    .main-container {
+        width: 1144px;
+    }
+}
+

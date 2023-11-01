@@ -8,3 +8,19 @@
     --nav-btn: #4957AA;
     --nav-btn-hover:#5B6CCB;
 }
+
+* {
+    font-family: Roboto, serif;
+    box-sizing: border-box;
+    color: #393939;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1B203D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
