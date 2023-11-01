@@ -1,0 +1,64 @@
+@import "constants.css";
+
+.categories-main {
+    width: 100%;
+    position: relative;
+    padding: 0 .5rem 1rem .5rem;
+}
+
+.categories-main h2 {
+    padding-left: 0;
+}
+
+.categories-container {
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+    overflow: hidden;
+}
+
+.category-cards {
+    min-width: 242px;
+    height: 192px;
+    border-radius: 8px;
+    background-color: #BAC5CF;
+    background-size: 100%;
+}
+
+.category-nav-btn-container {
+    width: 100%;
+    padding: 0 1.5rem 0 .5rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+}
+
+.category-1{
+    background-image: url("/assets/images/genre.jpg");
+}
+
+.category-2{
+    background-image: url("/assets/images/genre-1.jpg");
+}
+
+.category-3{
+    background-image: url("/assets/images/genre-2.jpg");
+}
+
+.category-4{
+    background-image: url("/assets/images/genre-3.jpg");
+}
+
+.category-5{
+    background-image: url("/assets/images/genre1.jpg");
+}
+
+.category-nav-btn {
+    background: var(--nav-btn);
+    height: 64px;
+    width: 32px;
+    border-radius: 6px;
+    border: none;
+    margin: 0 .5rem;
+}

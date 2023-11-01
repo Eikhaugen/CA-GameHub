@@ -3,10 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/products.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/categories.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6747f39511.js" crossorigin="anonymous"></script>
     <title>GameHub - Products</title>
 </head>
+
 <body>
+    <div class="main-container">
+        <header>
+            <div class="logo">
+                <a href="index.html" aria-label="logo, click to go to home">
+                    <img src="assets/images/logo/logo-150w.png" alt="logo"/>
+                </a>
+            </div>
+            <div class="searchbar">
+                <label for="searchbar"></label>
+                <input type="text" id="searchbar" name="searchbar" placeholder="Search for your next game">
+                <button class="desktop-search-btn header-desktop-btn" type="submit">Search</button>
+            </div>
+            <button class="menu-btn" aria-label="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" aria-hidden="true">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+            </button>
+            <div class="header-desktop-btn-container">
+                <button class="header-desktop-cart-btn header-desktop-btn"><i class="fa-solid fa-cart-shopping"
+                                                                              aria-hidden="true"></i>&nbspCart
+                </button>
+                <button class="header-desktop-sign-up-btn header-desktop-btn">Sign up</button>
+            </div>
+        </header>
+
+        <!--Products section-->
+        <h1>Strategy games</h1>
+        <div class="products-container">
+            <div class="product-card-1 product-card">
+                <div class="product-card-image">
+                    <img src="assets/images/GameHub_covers6.webp"/>
+                </div>
+                <div class="product-card-desc">
+                    <span class="game-title"><a href="product-details.html">Game Title 1</a></span>
+                    <span><a href="#">Strategy</a> | <a href="#">RTS</a> | <a href="#" >City Building</a>  </span>
+                </div>
+                <div class="product-card-price-container">
+                    <div class="product-card-price">
+                        100,00 kr
+                    </div>
+                    <button class="cta-buy-btn" onclick="window.location.href='product-details.html'">Buy Now!</button>
+                </div>
+            </div>
+            <div class="product-card-2 product-card">
+                <div class="product-card-image">
+                    <img src="assets/images/GameHub_covers9.webp"/>
+                </div>
+                <div class="product-card-desc">
+                    <span class="game-title"><a href="product-details.html">Game Title 2</a></span>
+                    <span><a href="#">Strategy</a> | <a href="#">RTS</a> | <a href="#" >Base Building</a>  </span>
+                </div>
+                <div class="product-card-price-container">
+                    <div class="product-card-price">
+                        100,00 kr
+                    </div>
+                    <button class="cta-buy-btn" onclick="window.location.href='product-details.html'">Buy Now!</button>
+                </div>
+            </div>
+            <div class="product-card-3 product-card">
+                <div class="product-card-image">
+                    <img src="assets/images/GameHub_covers10.webp"/>
+                </div>
+                <div class="product-card-desc">
+                    <span class="game-title"><a href="product-details.html">Game Title 3</a></span>
+                    <span><a href="#">RTS</a> | <a href="#">Classic</a> | <a href="#" >Multiplayer</a>  </span>
+                </div>
+                <div class="product-card-price-container">
+                    <div class="product-card-price">
+                        100,00 kr
+                    </div>
+                    <button class="cta-buy-btn" onclick="window.location.href='product-details.html'">Buy Now!</button>
+                </div>
+            </div>
+            <div class="product-card-4 product-card">
+                <div class="product-card-image">
+                    <img src="assets/images/GameHub_covers.webp"/>
+                </div>
+                <div class="product-card-desc">
+                    <span class="game-title"><a href="product-details.html">Game Title 4</a></span>
+                    <span><a href="#">Strategy</a> | <a href="#">RTS</a> | <a href="#" >City Building</a>  </span>
+                </div>
+                <div class="product-card-price-container">
+                    <div class="product-card-price">
+                        100,00 kr
+                    </div>
+                    <button class="cta-buy-btn" onclick="window.location.href='product-details.html'">Buy Now!</button>
+                </div>
+            </div>
+            <div class="product-card-5 product-card">
+                <div class="product-card-image">
+                    <img src="assets/images/GameHub_covers10.webp"/>
+                </div>
+                <div class="product-card-desc">
+                    <span class="game-title"><a href="product-details.html">Game Title 5</a></span>
+                    <span><a href="#">Strategy</a> | <a href="#">RTS</a> | <a href="#" >City Building</a>  </span>
+                </div>
+                <div class="product-card-price-container">
+                    <div class="product-card-price">
+                        100,00 kr
+                    </div>
+                    <button class="cta-buy-btn" onclick="window.location.href='product-details.html'">Buy Now!</button>
+                </div>
+            </div>
+            <div class="product-card-6 product-card">
+                <div class="product-card-image">
+                    <img src="assets/images/GameHub_covers9.webp"/>
+
+                </div>
+                <div class="product-card-desc">
+                    <span class="game-title"><a href="product-details.html">Game Title 6</a></span>
+                    <span><a href="#">Strategy</a> | <a href="#">RTS</a> | <a href="#" >City Building</a>  </span>
+                </div>
+                <div class="product-card-price-container">
+                    <div class="product-card-price">
+                        100,00 kr
+                    </div>
+                    <button class="cta-buy-btn" onclick="window.location.href='product-details.html'">Buy Now!</button>
+                </div>
+
+            </div>
+            <div class="product-card-7 product-card">
+                <div class="product-card-image">
+                    <img src="assets/images/GameHub_covers8.webp"/>
+                </div>
+                <div class="product-card-desc">
+                    <span class="game-title"><a href="product-details.html">Game Title 7</a></span>
+                    <span><a href="#">Strategy</a> | <a href="#">RTS</a> | <a href="#" >City Building</a>  </span>
+                </div>
+                <div class="product-card-price-container">
+                    <div class="product-card-price">
+                        100,00 kr
+                    </div>
+                    <button class="cta-buy-btn" onclick="window.location.href='product-details.html'">Buy Now!</button>
+                </div>
+            </div>
+            <div class="product-card-8 product-card">
+                <div class="product-card-image">
+                    <img src="assets/images/GameHub_covers7.webp"/>
+
+                </div>
+                <div class="product-card-desc">
+                    <span class="game-title"><a href="product-details.html">Game Title 8</a></span>
+                    <span><a href="#">Strategy</a> | <a href="#">RTS</a> | <a href="#" >City Building</a>  </span>
+                </div>
+                <div class="product-card-price-container">
+                    <div class="product-card-price">
+                        100,00 kr
+                    </div>
+                    <button class="cta-buy-btn" onclick="window.location.href='product-details.html'">Buy Now!</button>
+                </div>
+            </div>
+            <div class="product-card-9 product-card">
+                <div class="product-card-image">
+                    <img src="assets/images/GameHub_covers10.webp"/>
+                </div>
+                <div class="product-card-desc">
+                    <span class="game-title"><a href="product-details.html">Game Title 9</a></span>
+                    <span><a href="#">Strategy</a> | <a href="#">RTS</a> | <a href="#" >City Building</a>  </span>
+                </div>
+                <div class="product-card-price-container">
+                    <div class="product-card-price">
+                        100,00 kr
+                    </div>
+                    <button class="cta-buy-btn" onclick="window.location.href='product-details.html'">Buy Now!</button>
+                </div>
+            </div>
+            <div class="product-card-10 product-card">
+                <div class="product-card-image">
+                    <img src="assets/images/GameHub_covers2.webp"/>
+                </div>
+                <div class="product-card-desc">
+                    <span class="game-title"><a href="product-details.html">Game Title 10</a></span>
+                    <span><a href="#">Strategy</a> | <a href="#">RTS</a> | <a href="#" >City Building</a>  </span>
+                </div>
+                <div class="product-card-price-container">
+                    <div class="product-card-price">
+                        100,00 kr
+                    </div>
+                    <button class="cta-buy-btn" onclick="window.location.href='product-details.html'">Buy Now!</button>
+                </div>
+            </div>
+            <div class="product-card-11 product-card">
+                <div class="product-card-image">
+                    <img src="assets/images/GameHub_covers.webp"/>
+                </div>
+                <div class="product-card-desc">
+                    <span class="game-title"><a href="product-details.html">Game Title 11</a></span>
+                    <span><a href="#">Strategy</a> | <a href="#">RTS</a> | <a href="#" >City Building</a>  </span>
+                </div>
+                <div class="product-card-price-container">
+                    <div class="product-card-price">
+                        100,00 kr
+                    </div>
+                    <button class="cta-buy-btn" onclick="window.location.href='product-details.html'">Buy Now!</button>
+                </div>
+
+            </div>
+            <div class="product-card-12 product-card">
+                <div class="product-card-image">
+                    <img src="assets/images/GameHub_covers3.webp"/>
+                </div>
+                <div class="product-card-desc">
+                    <span class="game-title"><a href="product-details.html">Game Title 12</a></span>
+                    <span><a href="#">Strategy</a> | <a href="#">RTS</a> | <a href="#" >City Building</a>  </span>
+                </div>
+                <div class="product-card-price-container">
+                    <div class="product-card-price">
+                        100,00 kr
+                    </div>
+                    <button class="cta-buy-btn" onclick="window.location.href='product-details.html'">Buy Now!</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Categories-->
+        <div class="categories-main">
+            <h2>Explore more categories</h2>
+            <div>
+                <div class="categories-container">
+                    <div class="category-cards category-1"></div>
+                    <div class="category-cards category-2"></div>
+                    <div class="category-cards category-3"></div>
+                    <div class="category-cards category-4"></div>
+                    <div class="category-cards category-5"></div>
+                </div>
+                <div class="category-nav-btn-container">
+                    <button class="category-nav-left category-nav-btn"
+                            aria-label="previous">
+                        <svg width="16" height="34" viewBox="0 0 16 34" fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             aria-hidden="true">
+                            <path d="M15.2 3.4425L12.778 0L0.800003 17L12.778 34L15.2 30.5575L5.653 17L15.2 3.4425Z"
+                                  fill="white"/>
+                        </svg>
+                    </button>
+                    <button class="category-nav-right category-nav-btn"
+                            aria-label="next">
+                        <svg width="16" height="34" viewBox="0 0 16 34" fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             aria-hidden="true">
+                            <path d="M0.799996 30.5575L3.222 34L15.2 17L3.222 0L0.799996 3.4425L10.347 17L0.799996 30.5575Z"
+                                  fill="white"/>
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-links-section">
+                <ul class="footer-links">
+                    <li><a href="about.html">About Gamehub</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Refunds</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright-section">
+            <span>
+                ©2023 GameHub. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+                VAT included in all prices where applicable.
+            </span>
+            </div>
+
+
+        </footer>
+    </div>
 
 </body>
 </html>
