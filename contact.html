@@ -55,18 +55,16 @@
                 </div>
                 <div class="contact-container-form-container">
                     <form name="contact" method="POST" data-netlify="true">
-                        <label for="name">
-                            Full name
+                        <label> Full name <input type="text" id="name" name="name">
                         </label>
-                        <input type="text" id="name" name="name">
-                        <label for="email">
-                            E-mail
+
+                        <label>
+                            E-mail  <input type="email" id="email" name="email">
                         </label>
-                        <input type="email" id="email" name="email">
-                        <label for="message">
-                            Your message
+
+                        <label>
+                            Your message <textarea id="message" name="message"></textarea>
                         </label>
-                        <textarea id="message" name="message"></textarea>
                         <button id="submit" type="submit">Submit</button>
                     </form>
                 </div>

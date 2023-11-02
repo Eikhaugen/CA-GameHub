@@ -41,6 +41,7 @@
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -52,7 +53,7 @@
 }
 
 .contact-container-form-container label {
-    align-self: start;
+    align-self: center;
     padding: 1rem 0 .5rem 0;
 }
 
@@ -67,6 +68,7 @@
 }
 
 .contact-container-form-container textarea {
+    display: block;
     height: 200px;
     resize: none;
 }
