@@ -27,6 +27,11 @@
 .contact-container-info .text-1 {
     font-size: 20px;
 }
+
+.contact-container-info .text-2 {
+ font-size: 1rem;
+}
+
 .contact-container-info .text {
     padding: 0 1rem;
 }
