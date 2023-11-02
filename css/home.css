@@ -1,29 +1,11 @@
 @import "/css/constants.css";
 
-* {
-    font-family: Roboto, serif;
-    box-sizing: border-box;
-    color: #393939;
-}
-
-.main-container {
-    width: 100%;
-}
-
 /*Featured section*/
-
 .featured-container {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 0 .5rem;
-}
-
-h1, h2 {
-    color: #ffffff;
-    font-size: 32px;
-    font-weight: 400;
-    padding-left: .5rem;
 }
 
 .featured-container-right {
@@ -254,10 +236,4 @@ h1, h2 {
         height: 192px;
     }
 
-}
-
-@media (min-width: 1144px) {
-    .main-container {
-        width: 1144px;
-    }
 }
