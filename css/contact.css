@@ -81,6 +81,10 @@
     margin-top: 1rem;
 }
 
+.contact-container-form-container #submit:hover, .contact-container-form-container #submit:focus{
+    background-color: var(--cta-hover);
+}
+
 @media (min-width: 850px){
 
     .contact-container-info {
