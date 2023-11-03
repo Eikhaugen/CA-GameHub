@@ -20,8 +20,6 @@
     gap: .5rem;
 }
 
-
-
 .cart-item {
     width: 100%;
     border: 1px solid #393939;
@@ -80,7 +78,8 @@
 .separator {
     height: 1px;
     background-color: #393939;
-    width: 98%;align-self: center;
+    width: 98%;
+    align-self: center;
 }
 
 .cart-checkout-section-lower {
@@ -100,11 +99,11 @@
     font-size: 1rem;
 }
 
-.checkout-btn:hover{
+.checkout-btn:hover {
     background-color: var(--cta-hover);
 }
 
-.cart-checkout-section-lower form{
+.cart-checkout-section-lower form {
     width: fit-content;
     align-self: end;
 }
@@ -132,8 +131,9 @@
 }
 
 .delivery-info {
-text-align: left;
+    text-align: left;
     padding-bottom: 1rem;
+    margin-top: auto;
 }
 
 .ad-container {

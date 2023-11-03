@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="description"
+          content="Checkout page">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/checkout.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/categories.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6747f39511.js" crossorigin="anonymous"></script>
     <title>GameHub - Checkout</title>
 </head>
 <body>
+    <div class="main-container">
+        <header>
+            <div class="logo">
+                <a href="index.html" aria-label="logo, click to go to home">
+                    <img src="assets/images/logo/logo-150w.png" alt="logo"/>
+                </a>
+            </div>
+            <div class="searchbar">
+                <label for="searchbar"></label>
+                <input type="text" id="searchbar" name="searchbar" placeholder="Search for your next game">
+                <button class="desktop-search-btn header-desktop-btn" type="submit">Search</button>
+            </div>
+            <button class="menu-btn" aria-label="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" aria-hidden="true">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+            </button>
+            <div class="header-desktop-btn-container">
+                <form action="cart.html">
+                    <button type="submit" class="header-desktop-cart-btn header-desktop-btn"><i
+                            class="fa-solid fa-cart-shopping"
 
+                            aria-hidden="true"></i>&nbspCart
+                    </button>
+
+                </form>
+
+
+                <button class="header-desktop-sign-up-btn header-desktop-btn">Sign up</button>
+            </div>
+        </header>
+        <div class="breadcrumbs">
+            <a href="" class="cart-link">Cart</a>
+            <span>></span>
+            <a href="" class="checkout-link">Checkout</a>
+            <span>></span>
+            <a href="" class="success-link">Success</a>
+        </div>
+        <h1>Checkout</h1>
+        <div class="billing-padding-container">
+            <form name="billing" class="main-billing-container" action="checkout-success.html">
+                <div class="billing-and-payment-container">
+                <div class="billing-details-container">
+                    <h3>Billing details</h3>
+                    <div class="account-username">
+                        <span>Account: Username123</span>
+                        <a href="index.html">Not your account? Sign out</a>
+                    </div>
+                    <br>
+                    <div class="form-name-div">
+                        <div class="firstname">
+                            <label for="firstname">First name</label>
+                            <input name="firstname" id="firstname" type="text">
+                        </div>
+                        <div class="lastname">
+                            <label for="lastname">Last name</label>
+                            <input name="lastname" id="lastname" type="text">
+                        </div>
+                    </div>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option selected disabled>Country</option>
+                        <option>Denmark</option>
+                        <option>Egypt</option>
+                        <option>Norway</option>
+                        <option>Sweden</option>
+                    </select>
+                    <div class="form-city-div">
+                        <div>
+                            <label for="city">City</label>
+                            <input name="city" id="city" type="text">
+                        </div>
+                        <div>
+                            <label for="zipcode">Zipcode</label>
+                            <input name="<zipcode>" id="zipcode" type="text">
+                        </div>
+                    </div>
+                    <label for="billingAddress">Address</label>
+                    <input name="billingAddress" id="billingAddress" type="text">
+                    <label for="billingOptional">Billing address 2 (optional)</label>
+                    <input name="billingOptional" id="billingOptional" type="text">
+                </div>
+                <div class="payment-method-container">
+                    <h3>Payment method</h3>
+                    <div class="payment-method-select-container">
+                        <label for="paymentMethod"></label>
+                        <select id="paymentMethod">
+                            <option selected>Visa ending in **** 3546</option>
+                            <option>Mastercard ending in **** 1234</option>
+                        </select>
+                        <a href="" class="a-accepted-payment-methods">Manage payment methods</a>
+                    </div>
+                    <span>Accepted payment methods:</span>
+                    <div class="payment-logo-container">
+                        <img class="payment-logo" src="assets/images/logo/visa-logo.svg" alt="visa logo">
+                        <img class="payment-logo" src="assets/images/logo/vipps-logo.svg" alt="vipps logo">
+                        <img class="payment-logo" src="assets/images/logo/mastercard-logo.svg" alt="mastercard logo">
+                    </div>
+                    <span>Available payment methods may vary by region</span>
+                </div>
+                </div>
+                <div class="order-summary-container">
+                    <h3>Your order</h3>
+                    <span></span>
+                    <div class="game-container">
+                        <span>Game title 1</span>
+                        <span>100,00 kr</span>
+                    </div>
+                    <div class="game-container">
+                        <span>Game title 2</span>
+                        <span>299,00 kr</span>
+                    </div>
+                    <div class="estimated-container">
+                    <span>Estimated total</span>
+                    <span>399,00 kr</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="summary-vat">All prices include VAT where applicable</div>
+                    <div class="summary-total">
+                    <span> Total:</span>
+                    <span>399,00 kr</span>
+                    </div>
+                    <div class="summary-delivery">
+                    <span>Delivery</span>
+                    <span>All games are delivered digitally. You will be able to download your game after checkout. A confirmation will be sent to your registered email-address.</span>
+                    </div>
+                    <button class="checkout-btn" type="submit">Confirm and pay</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="footer-links-section">
+                <ul class="footer-links">
+                    <li><a href="about.html">About Gamehub</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Refunds</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright-section">
+            <span>
+                ©2023 GameHub. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+                VAT included in all prices where applicable.
+            </span>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
