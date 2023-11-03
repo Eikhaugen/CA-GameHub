@@ -83,7 +83,7 @@ header {
 
 @media (min-width: 640px) {
     .searchbar {
-        display: block;
+        display: flex;
     }
 
     .searchbar input {
