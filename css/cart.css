@@ -1,2 +1,180 @@
 @import "constants.css";
 
+.cart-container-padding {
+    padding: .5rem;
+}
+
+.cart-and-ad-container {
+    padding: .5rem;
+    background-color: var(--primary);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.cart-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+
+.cart-item {
+    width: 100%;
+    border: 1px solid #393939;
+    border-radius: 6px;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    padding: 2px;
+}
+
+.cart-item-price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 4px 4px 4px;
+}
+
+.cart-item-price, .span-price {
+    font-size: 18px;
+}
+
+.cart-item-price-container a {
+    font-size: 14px;
+}
+
+.game-title {
+    flex-grow: 1;
+    font-size: 20px;
+    padding: .25rem .5rem;
+}
+
+.cart-thumbnail {
+    width: 78px;
+    height: 80px;
+}
+
+.cart-thumbnail-1 {
+    background-image: url("../assets/images/cart/thumbnail1.webp");
+}
+
+.cart-thumbnail-2 {
+    background-image: url("../assets/images/cart/thumbnail2.webp");
+}
+
+.cart-checkout-section {
+    height: 150px;
+    background-color: white;
+    border: 1px solid #393939;
+    border-radius: 6px;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.separator {
+    height: 1px;
+    background-color: #393939;
+    width: 98%;align-self: center;
+}
+
+.cart-checkout-section-lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0 .5rem;
+}
+
+.vat-info {
+    font-size: 14px;
+}
+
+.checkout-btn {
+    background-color: var(--cta-idle);
+    font-size: 1rem;
+}
+
+.checkout-btn:hover{
+    background-color: var(--cta-hover);
+}
+
+.cart-checkout-section-lower form{
+    width: fit-content;
+    align-self: end;
+}
+
+.continue-shopping-btn {
+    background-color: var(--secondary);
+}
+
+.continue-shopping-btn:hover {
+    background-color: var(--btn-hover);
+}
+
+.cart-btn {
+    width: 120px;
+    height: 36px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+}
+
+.estimated-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .5rem;
+}
+
+.delivery-info {
+text-align: left;
+    padding-bottom: 1rem;
+}
+
+.ad-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+
+}
+
+.ad {
+    width: 319px;
+    height: 279px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/cart/sale.png");
+}
+
+
+@media (min-width: 710px) {
+    .ad-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .cart-and-ad-container {
+        flex-direction: row;
+    }
+
+    .ad-container {
+        flex-direction: column;
+        width: fit-content;
+    }
+}
+
+@media (min-width: 1144px) {
+    .cart-container-padding {
+        padding: .5rem 0;
+    }
+}
