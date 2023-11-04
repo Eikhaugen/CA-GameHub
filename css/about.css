@@ -1,7 +1,7 @@
 @import "constants.css";
 
 .about-us-padding-container {
-    padding: 0 .5rem;
+    padding: 0 .5rem .5rem .5rem;
 }
 
 h3 {
@@ -11,6 +11,7 @@ h3 {
 }
 
 .about-us-main-container {
+    min-height: 100vh;
     background-color: var(--primary);
     width: 100%;
     border-radius: 6px;
@@ -25,6 +26,8 @@ h3 {
 }
 
 .image {
+    display: flex;
+    justify-content: center;
     align-self: center;
 }
 
@@ -33,26 +36,14 @@ h3 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .image {
-        width: 50%;
-        grid-area: image;
-    }
-
-    .text {
-    grid-area: text;
-        width: 50%;
-    }
-
-    grid-template-areas: 'text image'
-'text image'
-'text image';
-}
-
-@media (min-width: 1144px){
-    .about-us-padding-container{
-        padding: 0 .5rem;
+        grid-template-areas: 'text-1 image-1'
+'text-2 image-2'
+'text-3 image-2';
     }
 }
 
+@media (min-width: 1144px) {
+    .about-us-padding-container {
+        padding: 0 0 .5rem 0;
+    }
+}
