@@ -32,6 +32,7 @@
     justify-content: space-between;
     position: absolute;
     top: 40%;
+    pointer-events: none;
 }
 
 .featured-carousel-nav-btn {
@@ -41,6 +42,7 @@
     border-radius: 6px;
     border: none;
     margin: 0 .5rem;
+    pointer-events: visible;
 }
 
 .featured-carousel-nav-btn:hover, .featured-carousel-nav-btn:focus {
