@@ -57,7 +57,6 @@
 }
 
 /*Deals and Offers Section*/
-
 .deals-and-offers-main {
     display: flex;
     flex-direction: column;
@@ -81,6 +80,11 @@
     background-position: 50% 50%;
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+.deals-and-offers-card-1:hover, .deals-and-offers-card-2:hover, .deals-and-offers-card-3:hover,
+.deals-and-offers-card-1:focus, .deals-and-offers-card-2:focus, .deals-and-offers-card-3:focus{
+    box-shadow:  rgba(255, 255, 255, 0.2) 0 0 0 250px inset;
 }
 
 .deals-and-offers-card-1 {
