@@ -122,7 +122,9 @@
     border-radius: 6px;
     border: none;
     color: white;
+    cursor: pointer;
 }
+
 
 .estimated-section {
     display: flex;
