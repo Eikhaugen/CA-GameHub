@@ -15,18 +15,19 @@
     <script src="https://kit.fontawesome.com/6747f39511.js" crossorigin="anonymous"></script>
     <title>GameHub - Checkout</title>
 </head>
+
 <body>
     <div class="main-container">
         <header>
             <div class="logo">
                 <a href="index.html" aria-label="logo, click to go to home">
-                    <img src="assets/images/logo/logo-150w.png" alt="logo"/>
+                    <img src="assets/images/logo/logo-150w.png" alt="logo">
                 </a>
             </div>
             <div class="searchbar">
                 <label for="searchbar"></label>
                 <input type="text" id="searchbar" name="searchbar" placeholder="Search for your next game">
-                <button class="desktop-search-btn header-desktop-btn" type="submit" aria-label="search">Search</button>
+                <button class="desktop-search-btn header-desktop-btn" type="submit" aria-label="search"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>&nbsp;Search</button>
             </div>
             <button class="menu-btn" aria-label="menu">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" aria-hidden="true">
@@ -38,7 +39,7 @@
                 <form action="cart.html">
                     <button type="submit" class="header-desktop-cart-btn header-desktop-btn" aria-label="go to cart"><i
                             class="fa-solid fa-cart-shopping"
-                            aria-hidden="true"></i>&nbspCart
+                            aria-hidden="true"></i>&nbsp;Cart
                     </button>
                 </form>
                 <button class="header-desktop-sign-up-btn header-desktop-btn" aria-label="sign up">Sign up</button>
@@ -55,64 +56,65 @@
         <div class="billing-padding-container">
             <form name="billing" class="main-billing-container" action="checkout-success.html">
                 <div class="billing-and-payment-container">
-                <div class="billing-details-container">
-                    <h3>Billing details</h3>
-                    <div class="account-username">
-                        <span>Account: Username123</span>
-                        <a href="index.html" aria-label="sign-out">Not your account? Sign out</a>
-                    </div>
-                    <br>
-                    <div class="form-name-div">
-                        <div class="firstname">
-                            <label for="firstname">First name</label>
-                            <input name="firstname" id="firstname" type="text">
+                    <div class="billing-details-container">
+                        <h3>Billing details</h3>
+                        <div class="account-username">
+                            <span>Account: Username123</span>
+                            <a href="index.html" aria-label="sign-out">Not your account? Sign out</a>
                         </div>
-                        <div class="lastname">
-                            <label for="lastname">Last name</label>
-                            <input name="lastname" id="lastname" type="text">
+                        <br>
+                        <div class="form-name-div">
+                            <div class="firstname">
+                                <label for="firstname">First name</label>
+                                <input name="firstname" id="firstname" type="text">
+                            </div>
+                            <div class="lastname">
+                                <label for="lastname">Last name</label>
+                                <input name="lastname" id="lastname" type="text">
+                            </div>
                         </div>
-                    </div>
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                        <option selected disabled>Country</option>
-                        <option>Denmark</option>
-                        <option>Egypt</option>
-                        <option>Norway</option>
-                        <option>Sweden</option>
-                    </select>
-                    <div class="form-city-div">
-                        <div>
-                            <label for="city">City</label>
-                            <input name="city" id="city" type="text">
-                        </div>
-                        <div>
-                            <label for="zipcode">Zipcode</label>
-                            <input name="<zipcode>" id="zipcode" type="text">
-                        </div>
-                    </div>
-                    <label for="billingAddress">Address</label>
-                    <input name="billingAddress" id="billingAddress" type="text">
-                    <label for="billingOptional">Billing address 2 (optional)</label>
-                    <input name="billingOptional" id="billingOptional" type="text">
-                </div>
-                <div class="payment-method-container">
-                    <h3>Payment method</h3>
-                    <div class="payment-method-select-container">
-                        <label for="paymentMethod"></label>
-                        <select id="paymentMethod">
-                            <option selected>Visa ending in **** 3546</option>
-                            <option>Mastercard ending in **** 1234</option>
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option selected disabled>Country</option>
+                            <option>Denmark</option>
+                            <option>Egypt</option>
+                            <option>Norway</option>
+                            <option>Sweden</option>
                         </select>
-                        <a href="" class="a-accepted-payment-methods">Manage payment methods</a>
+                        <div class="form-city-div">
+                            <div>
+                                <label for="city">City</label>
+                                <input name="city" id="city" type="text">
+                            </div>
+                            <div>
+                                <label for="zipcode">Zipcode</label>
+                                <input name="<zipcode>" id="zipcode" type="text">
+                            </div>
+                        </div>
+                        <label for="billingAddress">Address</label>
+                        <input name="billingAddress" id="billingAddress" type="text">
+                        <label for="billingOptional">Billing address 2 (optional)</label>
+                        <input name="billingOptional" id="billingOptional" type="text">
                     </div>
-                    <span>Accepted payment methods:</span>
-                    <div class="payment-logo-container">
-                        <img class="payment-logo" src="assets/images/logo/visa-logo.svg" alt="visa logo">
-                        <img class="payment-logo" src="assets/images/logo/vipps-logo.svg" alt="vipps logo">
-                        <img class="payment-logo" src="assets/images/logo/mastercard-logo.svg" alt="mastercard logo">
+                    <div class="payment-method-container">
+                        <h3>Payment method</h3>
+                        <div class="payment-method-select-container">
+                            <label for="paymentMethod"></label>
+                            <select id="paymentMethod">
+                                <option selected>Visa ending in **** 3546</option>
+                                <option>Mastercard ending in **** 1234</option>
+                            </select>
+                            <a href="" class="a-accepted-payment-methods">Manage payment methods</a>
+                        </div>
+                        <span>Accepted payment methods:</span>
+                        <div class="payment-logo-container">
+                            <img class="payment-logo" src="assets/images/logo/visa-logo.svg" alt="visa logo">
+                            <img class="payment-logo" src="assets/images/logo/vipps-logo.svg" alt="vipps logo">
+                            <img class="payment-logo" src="assets/images/logo/mastercard-logo.svg"
+                                 alt="mastercard logo">
+                        </div>
+                        <span>Available payment methods may vary by region</span>
                     </div>
-                    <span>Available payment methods may vary by region</span>
-                </div>
                 </div>
                 <div class="order-summary-container">
                     <h3>Your order</h3>
@@ -126,18 +128,18 @@
                         <span>299,00 kr</span>
                     </div>
                     <div class="estimated-container">
-                    <span>Estimated total</span>
-                    <span>399,00 kr</span>
+                        <span>Estimated total</span>
+                        <span>399,00 kr</span>
                     </div>
                     <div class="divider"></div>
                     <div class="summary-vat">All prices include VAT where applicable</div>
                     <div class="summary-total">
-                    <span> Total:</span>
-                    <span>399,00 kr</span>
+                        <span> Total:</span>
+                        <span>399,00 kr</span>
                     </div>
                     <div class="summary-delivery">
-                    <span>Delivery</span>
-                    <span>All games are delivered digitally. You will be able to download your game after checkout. A confirmation will be sent to your registered email-address.</span>
+                        <span>Delivery</span>
+                        <span>All games are delivered digitally. You will be able to download your game after checkout. A confirmation will be sent to your registered email-address.</span>
                     </div>
                     <button class="checkout-btn" type="submit" aria-label="checkout and pay">Confirm and pay</button>
                 </div>
