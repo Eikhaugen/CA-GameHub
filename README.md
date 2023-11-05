@@ -9,7 +9,7 @@ The design of this project is based on the design I made for the course assignme
 ## Requirements:
 The course assignment had the following requirements:
   * The HTML should be semantic and neatly formatted.
-  * The CSS should follow the DRY principles and be easy to read-The website should be responsive and look good at every screen size with no horizontal scrollbars. Use Flexbox and CSS Grids where apropriate. PLease do no use a CSS framework like Bootstrap; we want to see that you can build responsive websites without the use of a framework.
+  * The CSS should follow the DRY principles and be easy to read-The website should be responsive and look good at every screen size with no horizontal scrollbars. Use Flexbox and CSS Grids where appropriate. PLease do no use a CSS framework like Bootstrap; we want to see that you can build responsive websites without the use of a framework.
   * The site should be WCAG compliant, and accessibility should be taken into account.
   * Each page should have a unique \<meta name="description">, <title> and \<h1>.
   * You should not use copied code in your submission. All code submitted must be written by yourself, You may use external sources to show you how to achieve specific effects, which should be included in your report.
@@ -48,5 +48,6 @@ I did not make the burger-menu on mobile/tablet, I could have used "checkbox hac
 I checked the code with W3C's markup validation service, it had six errors on the homepage that I promptly fixed. Four of the errors was for aria-labeling, one error was for using a slash "/" in a self closing tag </>.
 
 I could probably work more on making the site WCAG compliant, I have done some aria-labeling and I have added alt-texts to images, but I think i could do better.
+My code is also not very semantic.
 
 There is a bug with the product-detail page where one div overflows, between mobile and desktop, it is a minor issue that I have not fixed.
