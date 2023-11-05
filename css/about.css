@@ -30,6 +30,10 @@ h3 {
     align-self: center;
 }
 
+.image img {
+    width: 100%;
+}
+
 @media (min-width: 900px) {
     .about-us-main-container {
         display: grid;
