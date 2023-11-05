@@ -57,6 +57,11 @@
     border-radius: 6px;
     border: none;
     pointer-events: visible;
+    cursor: pointer;
+}
+
+.carousel-btn-left:hover, .carousel-btn-right:hover {
+    background-color: var(--nav-btn-hover);
 }
 
 .carousel-btn-left {
@@ -154,6 +159,10 @@
 
 .add-to-wishlist:hover, .add-to-wishlist:focus {
     background-color: var(--nav-btn-hover);
+}
+
+.add-to-cart, .add-to-wishlist, .see-more-btn {
+    cursor: pointer;
 }
 
 /*About section*/
