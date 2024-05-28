@@ -63,7 +63,7 @@ I switched from deploying on Vercel to Netlify, and I made the contact form on t
 ## Installing
 Clone the project repository to your local machine.
 ```bash
-git clone https://github.com/Eikhaugen/FED1-Project-Exam-1.git
+git clone https://github.com/Eikhaugen/CA-GameHub.git
 ```
 ### Running
 
